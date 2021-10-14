@@ -64,5 +64,5 @@ jobs:
        target: "~/app/"
        script: |
          sudo docker pull krytet/flask-first:latest 
-         sudo docker stop $(sudo docker ps -aq)
-         sudo docker run --rm -d -p 5000:5000 krytet/Git-Actions-Flask
+         sudo docker stop $(docker ps -a -q)
+         sudo docker run --rm -d -p 5000:5000 Git-Actions-Flask
