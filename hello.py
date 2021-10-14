@@ -9,7 +9,7 @@ def hello_world():
 
 @app.route('/seconds')
 def hello_people():
-    return 'Здесь так же все работает!!'
+    return 'Здесь так же все работает!'
 
 
 if __name__ == '__main__':

@@ -17,7 +17,7 @@ class FlaskAppTests(unittest.TestCase):
 
     def test_get_second(self):
         r = self.app.get('/seconds')
-        self.assertEqual(r.data.decode('utf-8'), 'Здесь так же все работает!!')
+        self.assertEqual(r.data.decode('utf-8'), 'Здесь так же все работает!')
 
     def test_post_second(self):
         r = self.app.post('/seconds')
