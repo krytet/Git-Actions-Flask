@@ -59,7 +59,7 @@ jobs:
        username: ${{ secrets.USER }}
        key: ${{ secrets.SSH_KEY }}
        passphrase: ${{ secrets.PASSPHRASE }} # если ваш ssh-ключ защищен фразой-паролем
-                 source: "docker-compose.yaml, nginx/default.conf"
+        source: "docker-compose.yaml, nginx/default.conf"
        target: "~/app/"
        script: |
          sudo docker pull krytet/Git-Actions-Flask
