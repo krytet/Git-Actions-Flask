@@ -64,5 +64,5 @@ jobs:
        target: "~/app/"
        script: |
          sudo docker pull krytet/flask-first
-         #sudo docker stop $(sudo docker ps -a -q)
+         sudo docker stop $(sudo docker ps -a -q)
          sudo docker run --rm -d -p 5000:5000 krytet/flask-first
